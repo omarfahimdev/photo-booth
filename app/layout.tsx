@@ -3,8 +3,8 @@ import "./globals.css";
 import { SITE_NAME } from "@/lib/presets";
 
 export const metadata: Metadata = {
-  title: `${SITE_NAME} – Passport photo maker, compressor & converter`,
-  description: "Crop a photo, tile it on A4 or any paper size as passport photos, export a print-ready PDF. Compress and batch-convert images. Free, private, runs in your browser.",
+  title: `${SITE_NAME} – Photo sheet maker, compressor & converter`,
+  description: "Add multiple photos, set a quantity for each, and tile them onto print-ready sheets with a multi-page PDF. Compress and batch-convert images. Free, private, runs in your browser.",
 };
 export const viewport: Viewport = { width: "device-width", initialScale: 1, viewportFit: "cover" };
 

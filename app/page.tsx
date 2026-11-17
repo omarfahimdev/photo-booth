@@ -1,10 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
-import PassportSheet from "@/components/PassportSheet";
+import PhotoSheet from "@/components/PhotoSheet";
 import BatchTool from "@/components/BatchTool";
 import { SITE_NAME, THEMES } from "@/lib/presets";
 
-const TABS = [["sheet", "Passport sheet"], ["comp", "Compress"], ["conv", "Convert"]] as const;
+const TABS = [["sheet", "Photo sheet"], ["comp", "Compress"], ["conv", "Convert"]] as const;
 
 export default function Home() {
   const [tab, setTab] = useState<string>("sheet");
@@ -33,7 +33,7 @@ export default function Home() {
         </select>
       </header>
       <main>
-        <section className={tab === "sheet" ? "" : "hid"}><PassportSheet /></section>
+        <section className={tab === "sheet" ? "" : "hid"}><PhotoSheet /></section>
         <section className={tab === "comp" ? "" : "hid"}>
           <BatchTool title="Compress images" sub="Shrink photos for forms and uploads. Set a quality or a target size and it finds the best fit." formats={["JPG", "WebP"]} compress button="Compress" zipName="compressed" />
         </section>
